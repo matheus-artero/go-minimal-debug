@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  discover:
+    container_name: app-debug
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000" # port to remote debugger to connect
